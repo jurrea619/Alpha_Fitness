@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:shrinkColumns="*">
+    <!-- Row 1 with single column -->
+    <TableRow
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageButton
+            android:id="@+id/profilePic"
+            android:background="@drawable/profile"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_width="5dp"
+            android:layout_marginRight="30dp"
+            android:textAlignment="center"
+            android:adjustViewBounds="true" />
+
+        <EditText
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="Joshua Urrea"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:id="@+id/userName"
+            android:inputType="textCapWords|textPersonName" />
+
+    </TableRow>
+    <!-- Row 2 with 3 columns -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:baselineAligned="true">
+        <TextView
+            android:id="@+id/genderLabel" android:text="Gender"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="5dp" android:gravity="center"
+            android:layout_width="wrap_content" />
+        <EditText
+            android:id="@+id/gender" android:text="Male"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="3dp" android:gravity="center"
+            android:background="#D3D3D3"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:singleLine="true" />
+        <TextView
+            android:id="@+id/weightLabel" android:text="Weight"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="5dp" android:gravity="center"
+            android:textSize="14sp"
+            android:layout_width="match_parent" />
+        <EditText
+            android:id="@+id/weight" android:text="197 lbs"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:background="#D3D3D3"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="3dp"
+            android:inputType="number"
+            android:singleLine="true" />
+    </TableRow>
+    <!-- Row 3 with 2 columns -->
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:padding="2dp">
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:background="#D3D3D3">
+        <TextView
+            android:text="Average/Weekly"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:padding="5dp" />
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/weeklyDistanceLabel" android:text="Distance"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+        <TextView
+            android:id="@+id/weeklyDistance" android:text="1.2 miles"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/weeklyTimeLabel" android:text="Time"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+        <TextView
+            android:id="@+id/weeklyTime" android:text="7 minutes"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/weeklyWorkoutsLabel" android:text="Workouts"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+        <TextView
+            android:id="@+id/weeklyWorkouts" android:text="1 workout"
+            android:layout_weight="1"
+            android:padding="10dip" android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/weeklyCaloriesLabel" android:text="Calories Burned"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+        <TextView
+            android:id="@+id/weeklyCalories" android:text="560 calories"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:background="#D3D3D3">
+        <TextView
+            android:id="@+id/allTimeLabel" android:text="All Time"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="5dp" android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/allTimeDistanceLabel" android:text="Distance"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+        <TextView
+            android:id="@+id/allTimeDistance" android:text="5 miles"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/allTimeTimeLabel" android:text="Time"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+        <TextView
+            android:id="@+id/allTimeTime" android:text="29 minutes"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/allTimeWorkoutsLabel" android:text="Workouts"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+        <TextView
+            android:id="@+id/allTimeWorkouts" android:text="4 workouts"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/allTimeCaloriesLabel" android:text="Calories Burned"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+        <TextView
+            android:id="@+id/allTimeCalories" android:text="6,789 calories"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:padding="10dip" android:gravity="center"/>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"  android:stretchColumns="*" >
+        <!-- Row 1 with single column -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Workout Details"  android:layout_span="1"
+                android:padding="16dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#D3D3D3">
+                <TextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp" android:text="Avg"  android:layout_span="1"
+                    android:padding="16dp"
+                    android:textColor="#000"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="24sp" android:text="0:00"  android:layout_span="1"
+                    android:padding="12dp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp" android:text="min/mi"  android:layout_span="1"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textAlignment="center" />
+                </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#D3D3D3">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp" android:text="Min"  android:layout_span="1"
+                    android:textColor="#000"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp" android:text="0:00"  android:layout_span="1"
+                    android:textColor="#000"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp" android:text="min/mi"  android:layout_span="1"
+                    android:textColor="#000"
+                    android:textAlignment="center" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="12sp" android:text="Max"  android:layout_span="1"
+                        android:textColor="#000"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp" android:text="0:00"  android:layout_span="1"
+                        android:textColor="#000"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="12sp" android:text="min/mi"  android:layout_span="1"
+                        android:textColor="#000"
+                        android:textAlignment="center" />
+                </TableRow>
+            </LinearLayout>
+        </TableRow>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    </LinearLayout>

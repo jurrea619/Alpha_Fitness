@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"  android:stretchColumns="*" >
+        <!-- Row 1 with single column -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="24sp" android:text="@string/record_workout_title"  android:layout_span="2"
+                android:padding="18dip"
+                android:textColor="#000"/>
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:onClick="openProfile"
+                android:background="@drawable/profile"
+                android:adjustViewBounds="false"
+                android:layout_height="match_parent"
+                android:layout_width="25dp"
+                android:layout_marginRight="15dp"
+                android:contentDescription="" />
+        </TableRow>
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/distanceLabel" android:text="@string/distance_label"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="10dp" android:gravity="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/durationLabel" android:text="@string/duration_label"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="10dp" android:gravity="center"
+                android:textSize="12sp" />
+        </TableRow>
+        <!-- Row 3 with 2 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:background="#8adec7">
+            <TextView
+                android:id="@+id/mileageCounter" android:text="@string/startMileage"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="10dp" android:gravity="center"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/timeDisplay" android:text="@string/startTime"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="10dp" android:gravity="center"
+                android:textSize="32sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/milesLable" android:text="@string/milesLabel"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="10dp" android:gravity="center"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/minutesLabel" android:text="@string/minutesLabel"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:padding="10dp" android:gravity="center"
+                android:textSize="12sp" />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:text="@string/start"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/startButton"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:onClick="startTimer" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <fragment
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="cs175.homework.alpha_fitness.MapWorkout" />
+    </LinearLayout>
+
+    </LinearLayout>

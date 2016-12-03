@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Alpha Fitness</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Record Workout Here</string>
+    <string name="WorkoutDetailsText">Bruh</string>
+    <string name="record_workout_title">Record Workout</string>
+    <string name="distance_label">Distance</string>
+    <string name="miles_label">Miles</string>
+    <string name="duration_label">Duration</string>
+    <string name="minutesLabel">Minutes</string>
+    <string name="title_activity_map_workout">Map</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="startTime">00:00:00</string>
+    <string name="startMileage">0.0</string>
+    <string name="milesLabel">Miles</string>
+
+</resources>
